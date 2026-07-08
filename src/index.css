@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Montserrat", sans-serif;
+  
+  --color-luxury-gold: #C5A059;
+  --color-luxury-gold-dark: #B18A42;
+  --color-luxury-gold-light: #D4B982;
+  --color-luxury-black: #121212;
+  --color-luxury-dark: #1A1A1A;
+  --color-luxury-cream: #F9F7F2;
+  --color-luxury-beige: #F1EFE9;
+  --color-luxury-gray: #666666;
+  --color-luxury-light-gray: #E8E5DD;
+  
+  --animate-fade-in: fade-in 1s ease-out forwards;
+  --animate-slide-up: slide-up 0.8s ease-out forwards;
+  --animate-pulse-slow: pulse-slow 3s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+
+/* Custom styles for premium layout scrollbar and glassmorphism */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4B982;
+}
+
+/* Lightbox customization */
+.lightbox-overlay {
+  background-color: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-luxury-cream);
+  color: var(--color-luxury-black);
+  overflow-x: hidden;
+}
+
+/* Luxury border styles and custom headings */
+.serif-heading {
+  font-family: var(--font-serif);
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #C5A059 0%, #D4B982 50%, #B18A42 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #B18A42 0%, #C5A059 50%, #8E6E33 100%);
+}
+
+/* Artistic Flair Theme Classes */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.gold-btn {
+  background: #C5A059;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.gold-btn:hover {
+  background: #D4B982;
+  transform: translateY(-2px);
+}
+
+.stat-card {
+  border-left: 1px solid #C5A059;
+  padding-left: 20px;
+}
+
+.hero-mask {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+

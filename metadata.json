@@ -1,0 +1,6 @@
+{
+  "name": "Imperial Hotel",
+  "description": "Website moderno e acolhedor para o Imperial Hotel em Marabá - PA. Conforto, excelente localização na Marabá Pioneira e facilidade de reservas via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
